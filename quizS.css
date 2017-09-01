@@ -1,0 +1,14 @@
+body
+{
+	background: grey;
+}
+
+#pr1, #pr2
+{
+	display: none;
+}
+
+#q2 ,#y2, #n2
+{
+	display: none;
+}
