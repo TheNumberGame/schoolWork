@@ -2,12 +2,17 @@ $(document).ready(function(){
 	$(".a1").click(function(){
 		$(".a1").hide(function(){
 			$("#pr1").show(function(){
-				$(".sh2").show(function(){
-					$(".a2").click(function(){
-						$(".a2").hide(function(){
-							$("#pr2").show();
-						});
+				$("#q2").show();
+				$(".a2").show(function(){	
+					$("#n2").click(function(){
+						$(".a2").hide();
+						$("#pr21").show();
 					});
+					$("#y2").click(function(){
+						$(".a2").hide();
+						$("#pr2").show();
+					});
+					
 				});
 			});
 		});
