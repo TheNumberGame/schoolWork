@@ -3,12 +3,17 @@ body
 	background: grey;
 }
 
-#pr1, #pr2, #pr21
+td, tr
+{
+	margin: 5px;
+}
+
+#pr1, #pr2, #pr21, #pr3, #pr31
 {
 	display: none;
 }
 
-#q2 ,#y2, #n2
+#q2, #q3 ,#y2, #n2, .a3
 {
 	display: none;
 }

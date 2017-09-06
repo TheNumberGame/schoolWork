@@ -6,13 +6,36 @@ $(document).ready(function(){
 				$(".a2").show(function(){	
 					$("#n2").click(function(){
 						$(".a2").hide();
-						$("#pr21").show();
+						$("#pr21").show(function(){
+							$("#q3").show();
+							$(".a3").show(function(){	
+								$("#n3").click(function(){
+									$(".a3").hide();
+									$("#pr31").show();
+								});
+								$("#y3").click(function(){
+									$(".a3").hide();
+									$("#pr3").show();
+								});
+							});
+						});
 					});
 					$("#y2").click(function(){
 						$(".a2").hide();
-						$("#pr2").show();
+						$("#pr2").show(function(){
+							$("#q3").show();
+							$(".a3").show(function(){	
+								$("#n3").click(function(){
+									$(".a3").hide();
+									$("#pr31").show();
+								});
+								$("#y3").click(function(){
+									$(".a3").hide();
+									$("#pr3").show();
+								});
+							});
+						});
 					});
-					
 				});
 			});
 		});
