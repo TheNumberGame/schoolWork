@@ -12,10 +12,12 @@ $(document).ready(function(){
 								$("#n3").click(function(){
 									$(".a3").hide();
 									$("#pr31").show();
+									$("#b1").show();
 								});
 								$("#y3").click(function(){
 									$(".a3").hide();
 									$("#pr3").show();
+									$("#b1").show();
 								});
 							});
 						});
@@ -28,10 +30,12 @@ $(document).ready(function(){
 								$("#n3").click(function(){
 									$(".a3").hide();
 									$("#pr31").show();
+									$("#b1").show();
 								});
 								$("#y3").click(function(){
 									$(".a3").hide();
 									$("#pr3").show();
+									$("#b1").show();
 								});
 							});
 						});
@@ -39,5 +43,9 @@ $(document).ready(function(){
 				});
 			});
 		});
+	});
+	$("#b1").click(function(){
+		$("#table1").hide();
+		$("img").show();
 	});
 });
