@@ -9,5 +9,9 @@ app.secret_key=os.environ["SECRET_KEY"];
 
 app.route('/' methods=['GET', 'POST'])
 def renderMain():
-  session['right'] = request.forms['right']
+  session['right'] += detRight()
   return render_tempalte('classQuiz.html')
+
+def detRight()
+  session['question'] += request.form['question']
+  return session['question']
