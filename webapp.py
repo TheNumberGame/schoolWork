@@ -17,4 +17,4 @@ def renderMain():
   #return session['question']
 
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
