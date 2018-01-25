@@ -15,3 +15,6 @@ def renderMain():
 def detRight()
   session['question'] += request.form['question']
   return session['question']
+
+if __name__=="__main__":
+    app.run(debug=False)
