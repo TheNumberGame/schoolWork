@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$(".a1").click(function(){
+		$.post('/' , question: 1)
 		$(".a1").hide(function(){
 			$("#pr1").show(function(){
 				$("#q2").show();
