@@ -5,6 +5,9 @@ from flask import session
 
 app = Flask(_name_)
 
-app.route('/'):
+app.secret_key=os.environ["SECRET_KEY"];
+
+app.route('/' methods=['GET', 'POST'])
 def renderMain():
+  session['right'] = request.forms['right']
   return render_tempalte('classQuiz.html')
