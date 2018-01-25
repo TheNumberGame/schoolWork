@@ -3,7 +3,7 @@ from flask import Flask, url_for, render_template, request
 from flask import redirect
 from flask import session
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 app.secret_key=os.environ["SECRET_KEY"];
 
