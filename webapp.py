@@ -7,7 +7,7 @@ app = Flask(_name_)
 
 app.secret_key=os.environ["SECRET_KEY"];
 
-@app.route('/' method=['GET', 'POST'])
+@app.route('/', method=['GET', 'POST'])
 def renderMain():
   #session['right'] += detRight()
   return render_tempalte('classQuiz.html')
