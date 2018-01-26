@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(".a1").click(function(){
-		$.post("webapp.py",{ question: 1});
+		$.post("/Q",{ question: 1});
 		$(".a1").hide(function(){
 			$("#pr1").show(function(){
 				$("#q2").show();
