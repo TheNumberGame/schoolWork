@@ -12,6 +12,10 @@ def renderMain():
   #session['right'] += detRight()
   return render_template('classQuiz.html')
 
+@app.route('/Q' methods=['POST'])
+def editCookie():
+  session['question'] = request.form['question']
+
 #def detRight()
  # session['question'] += request.form['question']
   #return session['question']
