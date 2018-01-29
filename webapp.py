@@ -12,7 +12,7 @@ overAll = 0
 @app.route('/', methods=['GET', 'POST'])
 def renderMain():
   #session['right'] += detRight()
-  #session['question'] = 0
+  session['question'] = 0
   return render_template('classQuiz.html')
 
 @app.route('/outOf')
