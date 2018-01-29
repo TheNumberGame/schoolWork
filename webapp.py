@@ -22,8 +22,8 @@ def renderOutOf():
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
   session['question'] = request.form['question']
-  #if session['question'] > overAll:
-  #  overAll = session['question']
+  if session['question'] > overAll:
+    overAll = session['question']
   return "Stop"
 
 #def detRight()
