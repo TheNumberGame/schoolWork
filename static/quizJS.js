@@ -6,6 +6,7 @@ $(document).ready(function(){
 				$("#q2").show();
 				$(".a2").show(function(){	
 					$("#n2").click(function(){
+						$.post("/Q",{ question: 2});
 						$(".a2").hide();
 						$("#pr21").show(function(){
 							$("#q3").show();
