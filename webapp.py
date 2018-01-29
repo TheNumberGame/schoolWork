@@ -15,7 +15,7 @@ def renderMain():
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
   session['question'] = request.form['question']
-  return None
+  return "Stop"
 
 #def detRight()
  # session['question'] += request.form['question']
