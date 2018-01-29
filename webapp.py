@@ -25,7 +25,8 @@ def editCookie():
   try:  
     if session['question'] > overAll:
       overAll = session['question']
-  
+  except:
+    print('fail')
   return "Stop"
 
 #def detRight()
