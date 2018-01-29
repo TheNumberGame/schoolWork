@@ -13,7 +13,7 @@ def renderMain():
   return render_template('classQuiz.html')
 
 @app.route('/outOf')
-def renderOutOf:
+def renderOutOf():
   return render_template('outOfNum.html')
 
 @app.route('/Q', methods=['GET', 'POST'])
