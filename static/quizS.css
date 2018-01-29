@@ -9,7 +9,7 @@ td, tr
 	border: 1px solid black;
 }
 
-#pr1, #pr2, #pr21, #pr3, #pr31, #outOf
+#pr1, #pr2, #pr21, #pr3, #pr31
 {
 	display: none;
 }
