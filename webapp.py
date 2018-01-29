@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 app.secret_key=os.environ["SECRET_KEY"];
 
-session['overAll'] = 0
+overAll = 0
 
 @app.route('/', methods=['GET', 'POST'])
 def renderMain():
@@ -22,8 +22,8 @@ def renderOutOf():
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
   session['question'] = request.form['question']
-  if session['question'] > session['overAll']:
-    session['overAll'] = session['question']
+  if session['question'] > overAll:
+    overAll = session['question']
   return "Stop"
 
 #def detRight()
