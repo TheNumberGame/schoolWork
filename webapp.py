@@ -23,9 +23,9 @@ def renderOutOf():
 def editCookie():
   session['question'] = request.form['question']
   #If statement creating errors. Causes session['question'] to not update for whatever reason.    
-  if session['question'] > overAll:
-    None
-  #overAll = session['question']
+  #if session['question'] > overAll:
+   # None
+  overAll = session['question']
   
   return "Stop"
 
