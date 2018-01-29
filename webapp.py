@@ -7,9 +7,12 @@ app = Flask(__name__)
 
 app.secret_key=os.environ["SECRET_KEY"];
 
+session['overAll'] = 0
+
 @app.route('/', methods=['GET', 'POST'])
 def renderMain():
   #session['right'] += detRight()
+  session['question'] = 0
   return render_template('classQuiz.html')
 
 @app.route('/outOf')
@@ -19,6 +22,8 @@ def renderOutOf():
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
   session['question'] = request.form['question']
+  if session['question'] > session['overAll']:
+    session['overAll'] = session['question']
   return "Stop"
 
 #def detRight()
