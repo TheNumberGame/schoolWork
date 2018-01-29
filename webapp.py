@@ -12,7 +12,7 @@ def renderMain():
   #session['right'] += detRight()
   return render_template('classQuiz.html')
 
-@app.route('/outOf'):
+@app.route('/outOf')
   def renderOutOf:
     return render_template('outOfNum.html')
 
