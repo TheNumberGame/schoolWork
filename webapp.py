@@ -26,6 +26,7 @@ def editCookie():
   #if session['question'] > overAll:
    # None
   overAll = session['question']
+  sesssion['allTime'] = session['question']
   
   return "Stop"
 
