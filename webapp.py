@@ -24,7 +24,7 @@ def editCookie():
   global overAll
   session['question'] = request.form['question']
   #If statement creating errors. Causes session['question'] to not update for whatever reason.    
-  if int(session['question']) > int(overAll):
+  if int(session['question']) >= overAll:
     overAll = session['question']
     session['allTime'] = overAll
   
