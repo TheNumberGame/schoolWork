@@ -8,6 +8,7 @@ app = Flask(__name__)
 app.secret_key=os.environ["SECRET_KEY"];
 
 overAll = 0
+session['AllTime'] = 0
 
 @app.route('/', methods=['GET', 'POST'])
 def renderMain():
