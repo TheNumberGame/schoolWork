@@ -21,6 +21,7 @@ def renderOutOf():
 
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
+  global overAll
   session['question'] = request.form['question']
   #If statement creating errors. Causes session['question'] to not update for whatever reason.    
   if session['question'] > overAll:
