@@ -13,6 +13,7 @@ overAll = 0
 def renderMain():
   #session['right'] += detRight()
   session['question'] = 0
+  session['allTime'] = overAll
   return render_template('classQuiz.html')
 
 @app.route('/outOf')
