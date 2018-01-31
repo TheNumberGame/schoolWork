@@ -24,8 +24,8 @@ def renderOutOf():
 def editCookie():
   global overAll
   
-  st = request.form['question'][0]
-  num = request.form['question'][1]
+  st = request.form['question[]'][0]
+  num = request.form['question[]'][1]
   
   if num == "first":
     session["question"] = 1
