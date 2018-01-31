@@ -1,24 +1,24 @@
 $(document).ready(function(){
 	$(".a1").click(function(){
-		$.post("/Q",{ question: "Yes"});
+		$.post("/Q",{ question: ["Yes", "first"]});
 		$(".a1").hide(function(){
 			$("#pr1").show(function(){
 				$("#q2").show();
 				$(".a2").show(function(){	
 					$("#n2").click(function(){
-						$.post("/Q",{ question: "No"});
+						$.post("/Q",{ question: ["No", "second"]});
 						$(".a2").hide();
 						$("#pr21").show(function(){
 							$("#q3").show();
 							$(".a3").show(function(){	
 								$("#n3").click(function(){
-									$.post("/Q",{ question: "No"});
+									$.post("/Q",{ question: ["No", "third"]});
 									$(".a3").hide();
 									$("#pr31").show();
 									$("#b1").show();
 								});
 								$("#y3").click(function(){
-									$.post("/Q",{ question: "Yes"});
+									$.post("/Q",{ question: ["Yes", "third"]});
 									$(".a3").hide();
 									$("#pr3").show();
 									$("#b1").show();
@@ -27,7 +27,7 @@ $(document).ready(function(){
 						});
 					});
 					$("#y2").click(function(){
-						$.post("/Q",{ question: "Yes"});
+						$.post("/Q",{ question: ["Yes", "second"]});
 						$(".a2").hide();
 						$("#pr2").show(function(){
 							$("#q3").show();
