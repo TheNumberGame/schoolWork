@@ -46,7 +46,6 @@ $(document).ready(function(){
 			});
 		});
 	});
-	$('#outOf').show();
 	$("#b1").click(function(){
 		$("#table1").hide();
 		$("img").show();
