@@ -27,9 +27,9 @@ def editCookie():
   st = request.form['question'][0]
   num = request.form['question'][1]
   
-  if num == 1:
+  if num == "first":
     session["question"] = 1
-  elif num == 2 and st == "Yes":
+  elif num == "second" and st == "Yes":
     session["question"] = 2
   
   if int(session['question']) >= overAll:
