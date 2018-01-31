@@ -24,12 +24,12 @@ def renderOutOf():
 def editCookie():
   global overAll
   
-  st = request.form['question[]'][0]
-  num = request.form['question[]'][1]
-  
+  st = request.form['question']
+  num = request.form['num']
+  print(st, num)
   if num == "first":
     session["question"] = 1
-  elif num == "second" and st == "Yes":
+  elif num == "second" and st == "No":
     session["question"] = 2
   
   if int(session['question']) >= overAll:
@@ -43,4 +43,4 @@ def editCookie():
   #return session['question']
 
 if __name__=="__main__":
-    app.run(debug=False)
+    app.run(debug=True)
