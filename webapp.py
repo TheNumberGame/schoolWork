@@ -8,7 +8,6 @@ app = Flask(__name__)
 app.secret_key=os.environ["SECRET_KEY"];
 
 overAll = 0
-correct = ["any", "Yes", "end"]
 
 @app.route('/', methods=['GET', 'POST'])
 def renderMain():
@@ -23,12 +22,14 @@ def renderOutOf():
 
 @app.route('/Q', methods=['GET', 'POST'])
 def editCookie():
-  global overAll, correct
-  str = request.form['question'][0]
+  global overAll
+  
+  st = request.form['question'][0]
   num = request.form['question'][1]
+  
   if num == 1:
     session["question"] = 1
-  elif num == 2 and str == "Yes":
+  elif num == 2 and st == "Yes":
     session["question"] = 2
   
   if int(session['question']) >= overAll:
