@@ -15,7 +15,7 @@ def renderMain():
   #session['right'] += detRight()
   session['question'] = 0
   session['allTime'] = overAll
-  session['rand'] = randrange(100)
+  session['rand'] = random.randrange(100)
   return render_template('classQuiz.html')
 
 @app.route('/outOf')
