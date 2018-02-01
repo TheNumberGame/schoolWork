@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#over").on("click", function(){
-	window.location.reload(true);
+	window.location.href = null;
 	});
 	$(".a1").click(function(){
 		$.post("/Q",{ question:"Yes", num: "first"});
