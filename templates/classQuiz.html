@@ -35,7 +35,9 @@
 				<td id="pr31">Yes</td>
 			</tr>
 		</table>
-		<iframe src="/outOf" style="border:none;"></iframe>
+		<div>
+		        <iframe src="/outOf" style="border:none;"></iframe>
+		</div>
 		{% if session['rand'] <= 25 %}
 			<img src="static/gameOver.jpg" alt="fail" >
 		{% elif session['rand'] <=50 and session['rand'] > 25 %}
