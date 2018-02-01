@@ -42,9 +42,10 @@
 		{% elif {{ session['rand'] }} =<50 and {{ session['rand'] }} => 25 %}
 			<img src="static/violatedTheLaw.jpg" alt="fail" >
 		{% elif {{ session['rand'] }} =>50 and {{ session['rand'] }} =< 75 %}
-			<!-- ending three -->
+			<img src="static/Thanos.gif" alt="fail" >
 		{% elif {{ session['rand'] }} => 75 %}
 			<!-- ending four -->
+		{% endif %}
 	</body>
 	
 </html>
