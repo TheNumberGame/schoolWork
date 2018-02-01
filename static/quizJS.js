@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$("#over").click(function(){
+	location.reload(True);
+	});
 	$(".a1").click(function(){
 		$.post("/Q",{ question:"Yes", num: "first"});
 		$(".a1").hide(function(){
