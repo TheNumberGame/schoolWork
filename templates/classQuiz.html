@@ -35,10 +35,6 @@
 				<td id="pr31">Yes</td>
 			</tr>
 		</table>
-                <div>
-		        <button id="over" type="button">Refresh</button>
-		        <button id="b1" type="button" >Click for Secret Ending.</button>
-		</div>
 		<iframe src="/outOf" style="border:none;"></iframe>
 		{% if session['rand'] <= 25 %}
 			<img src="static/gameOver.jpg" alt="fail" >
@@ -49,6 +45,10 @@
 		{% elif session['rand'] > 75 %}
 			<img src="static/ggEasy.gif" alt="fail" >
 		{% endif %}
+		<div>
+		        <button id="over" type="button">Refresh</button>
+		        <button id="b1" type="button" >Click for Secret Ending.</button>
+		</div>
 	</body>
 	
 </html>
