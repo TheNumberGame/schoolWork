@@ -37,13 +37,13 @@
 		</table>
 		<button id="b1" type="button" >Click for Secret Ending.</button>
 		<iframe src="/outOf" style="border:none;"></iframe>
-		{% if {{ session['rand'] }} =< 25 %}
+		{% if session['rand'] <= 25 %}
 			<img src="static/gameOver.jpg" alt="fail" >
-		{% elif {{ session['rand'] }} =<50 and {{ session['rand'] }} => 25 %}
+		{% elif session['rand'] <=50 and session['rand'] > 25 %}
 			<img src="static/violatedTheLaw.jpg" alt="fail" >
-		{% elif {{ session['rand'] }} =>50 and {{ session['rand'] }} =< 75 %}
+		{% elif session['rand'] > 50 and session['rand'] <= 75 %}
 			<img src="static/Thanos.gif" alt="fail" >
-		{% elif {{ session['rand'] }} => 75 %}
+		{% elif session['rand'] > 75 %}
 			<img src="static/ggEasy.gif" alt="fail" >
 		{% endif %}
 	</body>
