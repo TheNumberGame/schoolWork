@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#over").click(function(){
+	$("#over").on("click", function(){
 	window.location.reload(true);
 	});
 	$(".a1").click(function(){
