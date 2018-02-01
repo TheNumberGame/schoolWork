@@ -35,8 +35,10 @@
 				<td id="pr31">Yes</td>
 			</tr>
 		</table>
-                <button id="over" type="button">Refresh</button>
-		<button id="b1" type="button" >Click for Secret Ending.</button>
+                <div>
+		        <button id="over" type="button">Refresh</button>
+		        <button id="b1" type="button" >Click for Secret Ending.</button>
+		</div>
 		<iframe src="/outOf" style="border:none;"></iframe>
 		{% if session['rand'] <= 25 %}
 			<img src="static/gameOver.jpg" alt="fail" >
