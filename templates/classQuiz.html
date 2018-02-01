@@ -36,8 +36,15 @@
 			</tr>
 		</table>
 		<button id="b1" type="button" >Click for Secret Ending.</button>
-		<img src="static/gameOver.jpg" alt="fail" >
 		<iframe src="/outOf" style="border:none;"></iframe>
+		{% if {{ session['rand'] }} =< 25 %}
+			<img src="static/gameOver.jpg" alt="fail" >
+		{% elif {{ session['rand'] }} =<50 and {{ session['rand'] }} => 25 %}
+			<!-- ending two -->
+		{% elif {{ session['rand'] }} =>50 and {{ session['rand'] }} =< 75 %}
+			<!-- ending three -->
+		{% elif {{ session['rand'] }} => 75 %}
+			<!-- ending four -->
 	</body>
 	
 </html>
