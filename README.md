@@ -1,7 +1,7 @@
 # schoolWork
 This is School Work:
 
-https://thenumbergame.github.io/schoolWork/classQuiz.html
+https://github.com/TheNumberGame/schoolWork
 
 
 Heroku webpage:
