@@ -9,7 +9,7 @@ lxml==3.4.4
 MarkupSafe==0.23
 migrate==0.3.7
 pbr==1.6.0
-Pillow==2.9.0
+Pillow==9.0.0
 PyGithub==1.25.2
 six==1.9.0
 SQLAlchemy==1.0.8
